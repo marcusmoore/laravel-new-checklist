@@ -31,3 +31,5 @@ static::preventAccessingMissingAttributes($shouldBeStrict);
 ```
 
 [More details](https://laravel-news.com/shouldbestrict)
+
+Aaron Francis [argues](https://mostlytechnical.com/episodes/19-its-content-baby) that you should turn on `preventSilentlyDiscardingAttributes` and `preventAccessingMissingAttributes` in production but only enable `preventLazyLoading` locally since lazy loading something in production isn't the end of the world.
