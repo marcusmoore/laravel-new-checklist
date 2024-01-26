@@ -15,19 +15,13 @@ Relation::morphMap([
 ]);
 ```
 
-## Turn on Mode Strictness
-Add the following to the `boot` method of `AppServiceProvider`:
-
-```php
-Model::shouldBeStrict();
-```
-
-Which will turn on:
+## Turn on Model Strictness
+Consider adding the following to the `boot` method of `AppServiceProvider`:
 
 ```php
 static::preventLazyLoading($shouldBeStrict);
 static::preventSilentlyDiscardingAttributes($shouldBeStrict);
-static::preventAccessingMissingAttributes($shouldBeStrict);
+// static::preventAccessingMissingAttributes($shouldBeStrict);
 ```
 
 [More details](https://laravel-news.com/shouldbestrict)
@@ -43,3 +37,7 @@ Http::preventStrayRequests();
 ```
 
 [Docs](https://laravel.com/docs/10.x/http-client#preventing-stray-requests)
+
+## Use Immutable Dates
+
+[Info](https://dyrynda.com.au/blog/laravel-immutable-dates)
