@@ -41,3 +41,12 @@ Http::preventStrayRequests();
 ## Use Immutable Dates
 
 [Info](https://dyrynda.com.au/blog/laravel-immutable-dates)
+
+
+## Re-add Ignition
+
+[Removed](https://laravel-news.com/laravel-11-9-0) in [Laravel 11.9](https://github.com/laravel/laravel/commit/5d86ab4b729e23dcdaa3be2c2121c06d0677be61)
+
+```
+composer require --dev spatie/laravel-ignition
+```
